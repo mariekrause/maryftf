@@ -1,11 +1,16 @@
 <template>
-  <v-app id="app">
+  <div id="app">
     <router-view/>
-  </v-app>
+  </div>
 </template>
 
 <script>
+require('@/assets/css/main.css')
+require('../node_modules/normalize.css/normalize.css')
 export default {
   name: 'app'
 }
 </script>
+
+<style scoped>
+</style>

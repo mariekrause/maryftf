@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Taviraj-Italic';
+    src:url('../fonts/Taviraj-Italic.ttf.woff') format('woff'),
+        url('../fonts/Taviraj-Italic.ttf.eot'),
+        url('../fonts/Taviraj-Italic.ttf.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather-Sans-Regular.ttf.woff') format('woff'),
+        url('../fonts/Merriweather-Sans-Regular.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-Sans-Regular';
+    src:url('../fonts/Merriweather-Sans-Regular.ttf.woff') format('woff'),
+        url('../fonts/Merriweather-Sans-Regular.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
