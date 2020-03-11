@@ -5,10 +5,6 @@
         </div>
         <div class="headerright">
             <navbar></navbar>
-           <!--  <a >Home</a>
-            <a id="about" href="/about">Das bin ich</a>
-            <a id="blog" href="/blog">Blog</a>
-            <a id="contact" href="/contact">Kontakt</a> -->
         </div>   
     </div>
 </template>
@@ -20,12 +16,12 @@
 </script>
 
 <style scoped>
-a:hover:after {
+/* a:hover:after {
     content: url(../assets/pulse.svg)
-}
+} */
 #logo_header {
-    height: 50%;
-    width: 50%
+    height: 40%;
+    width: 40%
 }
 h1 {
     font-family: Taviraj-Italic;
@@ -40,7 +36,6 @@ a {
     flex-direction: column;
     font-family: "Merriweather-Sans-Regular";
     }
-
 .header {
     display: flex;
     flex-direction: row;
@@ -48,7 +43,7 @@ a {
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .headerleft {
     display: inline;

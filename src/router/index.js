@@ -16,6 +16,7 @@ const routes = routerOptions.map(route => {
 
 Vue.use(Router)
 Vue.component('Navbar', Navbar)
+
 // Vue.component('StandartButton', standartButton)
 
 export default new Router({
