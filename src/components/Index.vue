@@ -39,29 +39,19 @@
         </span>
       </div>
     </content>
-    <footer>
-      <a href="https://www.linkedin.com/in/mariekr/" target="_blank">
-        <i class="fab fa-linkedin footericon"></i>
-      </a>
-      <a href="https://www.instagram.com/maryftf" target="_blank">
-        <i class="fab fa-instagram footericon"></i>
-      </a>
-      <a href="mailto:marie.krause48@web.de">
-        <i class="far fa-envelope footericon"></i>
-      </a>
-      <a href="https://www.youtube.com/marytheidiot1" target="_blank">
-        <i class="fab fa-youtube footericon"></i>
-      </a>
-      <p class="footertext">Marie Krause &copy; 2020</p>
-    </footer>
+    <custom-footer></custom-footer>
   </div>
 </template>
 
 <script>
 import SiteHeader from './SiteHeader'
+import customFooter from './customFooter'
 export default {
   name: 'Index',
-  components: {SiteHeader},
+  components: {
+    SiteHeader, 
+    customFooter
+  },
   props: {
     msg: String
   }
@@ -69,25 +59,6 @@ export default {
 </script>
 
 <style scoped>
-  footer {
-    background-color: #86a9d9;
-    color: white;
-    text-align: center;
-    height: 8vh;
-  }
-  a {
-      text-decoration: none;
-      color: inherit
-  } 
-  .footericon {
-    margin: 1vh 1vh 0;
-  }
-  .footertext {
-    margin: 1vh 0;
-    display: flex;
-    align-content: baseline;
-    justify-content: center;
-  }
   .aboutmeavatar {
     max-height: 100%
   }
@@ -182,99 +153,4 @@ export default {
     color: white;
     position: absolute;
   }
-  .demo{
-  width:400px;
-  height:400px;
-  font-size:5em;
-  float:left;
-  text-align:center;
-}
-
-.rainbow-bg{
-		animation: rainbow-bg 2.5s linear;
-		animation-iteration-count: infinite;
-}
-
-.rainbow{
-		animation: rainbow 2.5s linear;
-		animation-iteration-count: infinite;
-}
-
-@keyframes rainbow-bg{
-		100%,0%{
-			background-color: rgb(255,0,0);
-		}
-		8%{
-			background-color: rgb(255,127,0);
-		}
-		16%{
-			background-color: rgb(255,255,0);
-		}
-		25%{
-			background-color: rgb(127,255,0);
-		}
-		33%{
-			background-color: rgb(0,255,0);
-		}
-		41%{
-			background-color: rgb(0,255,127);
-		}
-		50%{
-			background-color: rgb(0,255,255);
-		}
-		58%{
-			background-color: rgb(0,127,255);
-		}
-		66%{
-			background-color: rgb(0,0,255);
-		}
-		75%{
-			background-color: rgb(127,0,255);
-		}
-		83%{
-			background-color: rgb(255,0,255);
-		}
-		91%{
-			background-color: rgb(255,0,127);
-		}
-}
-
-@keyframes rainbow{
-		100%,0%{
-			color: rgb(255,0,0);
-		}
-		8%{
-			color: rgb(255,127,0);
-		}
-		16%{
-			color: rgb(255,255,0);
-		}
-		25%{
-			color: rgb(127,255,0);
-		}
-		33%{
-			color: rgb(0,255,0);
-		}
-		41%{
-			color: rgb(0,255,127);
-		}
-		50%{
-			color: rgb(0,255,255);
-		}
-		58%{
-			color: rgb(0,127,255);
-		}
-		66%{
-			color: rgb(0,0,255);
-		}
-		75%{
-			color: rgb(127,0,255);
-		}
-		83%{
-			color: rgb(255,0,255);
-		}
-		91%{
-			color: rgb(255,0,127);
-		}
-}
 </style>
