@@ -5,6 +5,7 @@
         </div>
         <div class="headerright">
             <navbar></navbar>
+            <img id="marker" src="../assets/marker.svg">
         </div>   
     </div>
 </template>
@@ -20,8 +21,9 @@
     content: url(../assets/pulse.svg)
 } */
 #logo_header {
-    height: 40%;
-    width: 40%
+    height: 45%;
+    width: 45%;
+    padding-left: 0.5vw;
 }
 h1 {
     font-family: Taviraj-Italic;
@@ -36,14 +38,20 @@ a {
     flex-direction: column;
     font-family: "Merriweather-Sans-Regular";
     }
+#marker {
+    width: 12%;
+    filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.2));
+    position: absolute;
+    right: 1vw;
+    top: -5vw;
+}
 .header {
     display: flex;
     flex-direction: row;
     background-color: #86a9d9;
     align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 12vh;
+    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.2));
 }
 .headerleft {
     display: inline;
@@ -51,9 +59,10 @@ a {
     width: 70vw;
 }
 .headerright {
-    display: inline-flex;
-    width: 50vw;
+    display: flex;
+    width: 44vw;
     justify-content: space-evenly;
     align-content: center;
+    position: relative
 }
 </style>

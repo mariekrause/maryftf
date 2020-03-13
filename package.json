@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "buttercms": "^1.2.2",
     "core-js": "^3.6.4",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",

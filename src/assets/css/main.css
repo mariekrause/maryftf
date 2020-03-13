@@ -16,3 +16,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src:url('../fonts/BebasNeue-Regular.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family:'Merriweather-Sans-Regular';
+}
