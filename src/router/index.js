@@ -9,6 +9,7 @@ import VueAxios from 'vue-axios'
 const routerOptions = [
   {path: '/', component: 'Index'},
   {path: '/about', component: 'AboutMe'},
+  {path: '/contact', component: 'Contact'},
   {path: '/*', component: 'NotFound'}
 ]
 const routes = routerOptions.map(route => {
