@@ -26,7 +26,7 @@
           </a>
         </div>
         <div class="post-it postit2">
-          <a href="/portfolio">
+          <a href="https://www.youtube.com/channel/UCOjtuEkb__FaJWVuO7VnShQ?view_as=subscriber" target="_blank">
             <p class="postitheading_alt">
               <i class="fab fa-youtube"></i>
               YouTube
@@ -44,13 +44,29 @@
             </p>
           </a>
         </div>
+        <div class="container">
         <div class="post-it postit3">
-          <a href="/blog">
+          <a href="https://www.linkedin.com/in/mariekr/">
             <p class="postitheading">
               <i class="fab fa-linkedin"></i>
               LinkedIn
             </p>
+            <p class="caption linkedin">Für alles rund um Arbeit & Business:<br>
+            Werde Teil meines Netzwerks!</p>
+            <img class="profilebanner" src="../assets/avatar_profile_banner.jpg">
           </a>
+        </div>
+        <div class="post-it postit4">
+             <a href="mailto:marie.krause48@web.de">
+            <p class="postitheading">
+              E-Mail
+            </p>
+            <p class="caption mail">
+                Direkte Anfrage? Kein Problem!<br> Kontaktiere mich gern unter<br> mail@mariekrause.de.
+                <br>Tipp: ein Klick auf dieses Kästchen genügt :)
+            </p>
+            </a>
+        </div>
         </div>
       </div>
     </div>
@@ -104,21 +120,39 @@ a:hover {
 .post-it {
   background-color: #86a9d9;
   margin: 1vw;
-  flex-grow: 1;
   height: 35vh;
   width: 33%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+
 }
 .post-it:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.4s;
 }
 .postit1 {
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 50vh;
 }
 .postit2 {
   height: 50vh;
+  width: 50%
+}
+.postit3 {
+  height: 27vh;
+  width: 30vw;
+  position: relative;
+}
+.postit4 {
+  height: 19vh;
+  width: 30vw;
+  position: relative;
+}
+.linkedin {
+    margin-left: 3.3vw;
 }
 .postitheading {
   writing-mode: vertical-lr;
@@ -150,10 +184,19 @@ a:hover {
   padding-left: 1vw;
   padding-right: 1vw;
 }
+.mail {
+  margin-left: 4vw;
+}
 #momentsapart {
   width: 90%;
-  height: 37%;
+  height: 52%;
   padding-top: 10vh;
   padding-left: 5%;
+}
+.profilebanner {
+    width: 82%;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw
 }
 </style>
