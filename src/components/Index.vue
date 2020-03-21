@@ -80,7 +80,7 @@ export default {
     position: relative;
   }
   #hero_img {
-    height: 40vw;
+    height: 77vh;
 
   }
   .texts {
@@ -142,7 +142,7 @@ export default {
     font-size: 20px;
   }
   #first_impression {
-    margin: 0 5vw;
+    margin: 0 8vw 0 5vw;
     line-height: 1.5;
   }
   .postitheading {

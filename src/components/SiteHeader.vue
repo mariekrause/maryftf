@@ -17,12 +17,14 @@
 </script>
 
 <style scoped>
-/* a:hover:after {
-    content: url(../assets/pulse.svg)
-} */
+@media (max-width: 1370px) {
+    #marker {
+        display: none;
+    }
+}
 #logo_header {
-    height: 45%;
-    width: 45%;
+    height: 10vh;
+    width: 350px;
     padding-left: 0.5vw;
 }
 h1 {

@@ -15,6 +15,16 @@
 </script>
 
 <style scoped>
+@media (max-width: 1111px) {
+  .navicon {
+    display: none;
+  }
+}
+@media (max-width: 830px) {
+    * {
+        display: none;
+    }
+}
 .navigation {
   display: flex;
   flex-direction: row;

@@ -18,7 +18,8 @@
 }
 @font-face {
     font-family: 'BebasNeue-Regular';
-    src:url('../fonts/BebasNeue-Regular.eot');
+    src:url('../fonts/BebasNeue-Regular.eot'),
+    url('../fonts/BebasNeue-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

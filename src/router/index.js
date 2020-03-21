@@ -12,7 +12,7 @@ const routerOptions = [
   {path: '/contact', component: 'Contact'},
   {path: '/blog', component: 'Blog'},
   {path: '/portfolio', component: 'Portfolio'},
-  {path: '/*', component: 'NotFound'}
+  {path: '*', component: 'NotFound'}
 ]
 const routes = routerOptions.map(route => {
   return {
