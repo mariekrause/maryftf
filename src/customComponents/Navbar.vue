@@ -25,6 +25,9 @@
         display: none;
     }
 }
+@media (max-width: 580px) {
+  .nav { overflow: auto; }
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -32,8 +35,7 @@
   width: 48vw;
 }
 .nav {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   max-width: 100%;
   max-height: 80%;
   border: 1px solid white;
@@ -85,9 +87,5 @@
 
 .navicon {
   padding-right: 0.5vw;
-}
-
-@media (max-width: 580px) {
-  .nav { overflow: auto; }
 }
 </style>

@@ -10,6 +10,8 @@
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.7.0",
     "buttercms": "^1.2.2",
     "core-js": "^3.6.4",
     "jquery": "^3.4.1",

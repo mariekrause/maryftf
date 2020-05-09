@@ -22,9 +22,21 @@
         display: none;
     }
 }
+@media (max-width: 768px) {
+    #logo_header {
+        overflow: none;
+    }
+    .headerleft {
+        width: 90% !important;
+        display: flex;
+    }
+    .headerright {
+        display: none !important;
+    }
+}
+
 #logo_header {
     height: 10vh;
-    width: 350px;
     padding-left: 0.5vw;
 }
 h1 {
@@ -53,8 +65,8 @@ a {
     background-color: #86a9d9;
     align-items: center;
     height: 12vh;
-    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.2));
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 .headerleft {
     display: inline;
     overflow: none;
