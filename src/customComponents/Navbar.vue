@@ -21,9 +21,6 @@
   }
 }
 
-@media (max-width: 580px) {
-  .nav { overflow: auto; }
-}
 .navigation {
   display: flex;
   flex-direction: row;

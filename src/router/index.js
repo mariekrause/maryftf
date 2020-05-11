@@ -13,6 +13,7 @@ const routerOptions = [
   {path: '/', component: 'Index'},
   {path: '/about', component: 'AboutMe'},
   {path: '/contact', component: 'Contact'},
+  {path: '/contact2', component: 'Contact2'},
   {path: '/blog', component: 'Blog'},
   {path: '/portfolio', component: 'Portfolio'},
   {path: '*', component: 'NotFound'}

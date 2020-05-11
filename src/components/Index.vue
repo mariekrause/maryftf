@@ -66,18 +66,18 @@ export default {
     padding-left: 6%;
   }
   .aboutmeavatar {
-    height: auto;
+    max-height: 100%;
     position: absolute;
     bottom: 0
   }
   .workavatar {
-    max-height: 100% !important;
+    max-height: 100%;
     position: absolute;
     right: 0;
     bottom: 0
   }
   .rocket {
-    max-height: 115% !important;
+    max-height: 115%;
     position: absolute;
     top: 1vh;
     left: 4vw;
