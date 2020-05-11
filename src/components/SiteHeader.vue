@@ -4,7 +4,7 @@
             <img id="logo_header" src="../assets/logo.png">
         </div>
         <div class="headerright">
-            <navbar></navbar>
+            <navbar id="nav"></navbar>
             <img id="marker" src="../assets/marker.svg">
         </div>   
     </div>
@@ -17,8 +17,13 @@
 </script>
 
 <style scoped>
-@media (max-width: 1370px) {
+@media (max-width: 1200px) {
     #marker {
+        display: none;
+    }
+}
+@media (max-width: 830px) {
+    #nav {
         display: none;
     }
 }
@@ -58,6 +63,8 @@ a {
     position: absolute;
     right: 1vw;
     top: -5vw;
+    display: none 
+    /*MARKER AUSBLENDEN */
 }
 .header {
     display: flex;

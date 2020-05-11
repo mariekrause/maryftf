@@ -17,14 +17,10 @@
 <style scoped>
 @media (max-width: 1111px) {
   .navicon {
-    display: none;
+    display: none
   }
 }
-@media (max-width: 830px) {
-    * {
-        display: none;
-    }
-}
+
 @media (max-width: 580px) {
   .nav { overflow: auto; }
 }
@@ -32,19 +28,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  overflow: none;
   width: 48vw;
+  white-space: nowrap; 
 }
 .nav {
   display: flex;
-  max-width: 100%;
-  max-height: 80%;
+  height: 90%;
   border: 1px solid white;
   border-radius: 5px;
 }
 
 .nav-item {
   color: white;
-  padding: 17px 0.8vw;
+  padding: 10px 0.8vw 17px;
   text-decoration: none;
   transition: .3s;
   z-index: 1;
