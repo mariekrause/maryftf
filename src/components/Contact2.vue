@@ -11,8 +11,8 @@
             <b-row class="bottom">
                 <b-col class="box" id="box1" lg="3" xl="3">
                     <a href="https://www.instagram.com/maryftf" traget="_blank">
-                        <p class="postitheading">
-                        <i class="fab fa-instagram"></i>
+                        <p class="postitheading_alt">
+                        <i class="fab fa-instagram d-lg-none d-xl-inline"></i>
                             Instagram
                         </p>
                         <p class="caption">
@@ -108,6 +108,23 @@ export default {
             margin-top: 5% !important
         }
     }
+    /* lg aufwärts */
+    @media (min-width: 992px) {
+        #bottom_right {
+            padding: 0
+        }
+        #heading {
+            margin-top: 3vh !important
+        }
+        #footer  {
+            position: fixed;
+            bottom: 0;
+            width: 100%
+        }
+        #box1 .postitheading_alt {
+            margin-top: 1vh
+        }
+    }
 
     #heading {
         font-family: "Bebasneue-Regular";
@@ -124,7 +141,7 @@ export default {
         font-size: 20px;
     }
     .bottom {
-        margin: 0 4vw
+        margin: 0 4vw 2vh
     }
     .box {
         border: 2px solid #86a9d9;
@@ -171,8 +188,5 @@ export default {
     }
     #box3  {
         margin-bottom: 2vh
-    }
-    #box4 {
-        margin-bottom: 12vh
     }
 </style>

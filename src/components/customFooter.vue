@@ -35,8 +35,8 @@ export default {
     text-align: center;
     height: 8vh;
     width: 100%;
-    position: fixed;
-    bottom: 0
+/*     position: fixed;
+    bottom: 0 */
   }
   .footericon {
     margin: 1vh 1vh 0;
