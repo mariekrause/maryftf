@@ -1,13 +1,29 @@
 <template>
     <div class="navigation">
-        <nav class="nav">
-            <a href="/" class="nav-item"><i class="fas fa-home navicon"></i>Home</a>
-            <a href="/about" class="nav-item"><i class="far fa-user navicon"></i>Über mich</a>
-            <a href="/portfolio" class="nav-item"><i class="far fa-map navicon"></i>Portfolio</a>
-            <a href="/blog" class="nav-item"><i class="far fa-comment-dots navicon"></i>Blog</a>
-            <a href="/contact" class="nav-item"><i class="far fa-paper-plane navicon"></i>Kontakt</a>
-            <span class="nav-indicator"></span>
-        </nav>
+      <!-- Vue Bootstrap Burger Dropdown -->
+      <div id="burgernav">
+        <b-dropdown right variant="transparent border-white text-white">
+          <template v-slot:button-content>
+            <i class="fas fa-bars fa-1x"></i>    
+          </template>
+          <b-dropdown-item href="/">Home</b-dropdown-item>
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-item href="/about">Über mich</b-dropdown-item>
+          <b-dropdown-item href="/portfolio">Portfolio</b-dropdown-item>
+          <b-dropdown-item href="/blog">Blog</b-dropdown-item>
+          <b-dropdown-item href="/contact">Kontakt</b-dropdown-item>
+        </b-dropdown>
+      </div>
+
+      <!-- Standard Nav -->
+      <nav class="nav">
+        <a href="/" class="nav-item"><i class="fas fa-home navicon"></i>Home</a>
+        <a href="/about" class="nav-item"><i class="far fa-user navicon"></i>Über mich</a>
+        <a href="/portfolio" class="nav-item"><i class="far fa-map navicon"></i>Portfolio</a>
+        <a href="/blog" class="nav-item"><i class="far fa-comment-dots navicon"></i>Blog</a>
+        <a href="/contact" class="nav-item"><i class="far fa-paper-plane navicon"></i>Kontakt</a>
+        <span class="nav-indicator"></span>
+      </nav>
     </div>
 </template>
 
@@ -19,6 +35,16 @@
   .navicon {
     display: none
   }
+}
+@media (max-width: 992px) {
+  .nav {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  #burgernav {
+    display: none
+    }
 }
 
 .navigation {
@@ -82,5 +108,9 @@
 
 .navicon {
   padding-right: 0.5vw;
+}
+#burgernav {
+  position: absolute;
+  right: 5vw;
 }
 </style>

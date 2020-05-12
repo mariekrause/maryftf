@@ -1,7 +1,7 @@
 <template>
     <div class="index">
         <site-header></site-header>
-        <b-container fluid>
+        <b-container fluid id="wrapper">
             <b-row class="top">
                 <b-col>
                     <h1 id="heading">Kontaktiere mich!</h1>
@@ -172,7 +172,7 @@ export default {
     .caption {
         color: black;
         line-height: 1.5;
-        padding-left: 1vw;
+        padding-left: 1em;
         padding-right: 1vw;
     }
     .profilebanner {

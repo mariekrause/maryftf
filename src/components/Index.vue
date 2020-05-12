@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <site-header></site-header>
-    <b-container fluid>
+    <b-container fluid id="wrapper">
       <b-row>
         <b-col class="top d-none d-lg-inline" xl="4" lg="5">
             <img id="hero_img" class="img-fluid" src="../assets/avatar.png">
@@ -17,6 +17,9 @@
                 <span class="subline2">Wir sehen uns online!</span>
               </div>
           </b-row>
+
+          <img id="colouravatar" class="d-none d-sm-inline d-md-none" src="../assets/avatar_profile.png">
+
           <b-row class="post-its">
               <b-col xl="3" lg="3" md="4" sm="11" xs="11" class="post-it">
                 <a href="/about">
@@ -40,7 +43,7 @@
         </b-col>  
       </b-row>  
     </b-container>
-    <custom-footer></custom-footer>
+    <custom-footer id="footer"></custom-footer>
   </div>
 </template>
 
@@ -71,16 +74,10 @@ export default {
     bottom: 0
   }
   .workavatar {
-    max-height: 100%;
+    width: 60%;
     position: absolute;
     right: 0;
-    bottom: 0
-  }
-  .rocket {
-    max-height: 115%;
-    position: absolute;
-    top: 1vh;
-    left: 4vw;
+    bottom: 0;
   }
   .post-it {
     background-color: #86a9d9;
@@ -90,7 +87,7 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
-/* lg: */
+/* lg and up */
 @media (min-width: 992px) {
   .post-its {
     padding-left: 6% !important
@@ -108,10 +105,12 @@ export default {
     bottom: 0
   }
   .rocket {
-    max-height: 85%;
+    height: auto;
+    max-height: 100%;
+    width: 50%;
     position: absolute;
-    bottom: -2vw;
-    left: 4vw;
+    bottom: 0;
+    right: 10%
   } 
   .post-it {
     height: 30vh !important;
@@ -134,7 +133,7 @@ export default {
     margin-left: 0 !important
   }
 }
-/* md: */
+/* md and up */
 @media (min-width: 768px) {
   .post-its {
     padding-left: 4%;
@@ -143,14 +142,14 @@ export default {
     font-size: 5vw;
   }
 }
-
+/* lg and down */
 @media (max-width: 1200px) {
   .rocket {
     display: none
   }
 }
-
-@media (max-width: 768px) {
+/* sm and down */
+@media (max-width: 767px) {
   #hero_img {
     display: none
   }
@@ -165,7 +164,7 @@ export default {
   .postitheading {
     writing-mode: horizontal-tb !important;
     position: absolute;
-    left: 20px !important;
+    left: 5% !important;
     position: absolute;
     top: 20% !important;
   }
@@ -173,6 +172,13 @@ export default {
     margin-top: 2vh !important
   }
 }
+
+  #wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1500px;
+  }
 
   .index {
     overflow-y: hidden;
@@ -185,7 +191,8 @@ export default {
   }
   #hero_img {
     height: auto;
-
+    max-height: 95%;
+    padding-top: 1em
   }
   .texts {
     display: flex;
@@ -193,7 +200,7 @@ export default {
   }
   .top {
     background-color: white;
-    height: 80vh;
+    
   }
   .post-it {
     background-color: #86a9d9;
@@ -243,5 +250,18 @@ export default {
     overflow: none;
     position: absolute;
     bottom: 0
+  }
+  #colouravatar {
+    width: 42vh;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100
+  }
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%
   }
 </style>

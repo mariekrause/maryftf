@@ -4,7 +4,7 @@
             <img id="logo_header" src="../assets/logo.png">
         </div>
         <div class="headerright">
-            <navbar id="nav"></navbar>
+            <navbar></navbar>
             <img id="marker" src="../assets/marker.svg">
         </div>   
     </div>
@@ -22,11 +22,6 @@
         display: none;
     }
 }
-@media (max-width: 830px) {
-    #nav {
-        display: none;
-    }
-}
 @media (max-width: 768px) {
     #logo_header {
         overflow: none;
@@ -35,18 +30,14 @@
         width: 90% !important;
         display: flex;
     }
-    .headerright {
+/*     .headerright {
         display: none !important;
-    }
+    } */
 }
 
 #logo_header {
     height: 10vh;
     padding-left: 0.5vw;
-}
-h1 {
-    font-family: Taviraj-Italic;
-    display: inline;
 }
 a {
     text-decoration: none;
