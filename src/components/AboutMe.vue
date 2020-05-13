@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 450px) {
+  #heading {
+      margin-top: 8% !important
+  }
+}
   a {
     text-decoration: none;
     color: #86a9d9;
@@ -109,5 +114,8 @@ export default {
     justify-content: center;
     align-content: center;
     max-width: 1200px;
+  }
+  .smallonly {
+    align-items: flex-start;
   }
 </style>

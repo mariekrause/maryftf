@@ -17,6 +17,11 @@
 </script>
 
 <style scoped>
+@media (max-width: 450px) {
+  #logo_header {
+      height: 15vw !important
+  }
+}
 /* lg abwärts */
 @media (max-width: 1200px) {
     #marker {

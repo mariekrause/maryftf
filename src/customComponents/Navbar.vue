@@ -40,9 +40,6 @@
   .nav {
     display: none !important;
   }
-  #burgernav {
-    
-  }
 }
 @media (min-width: 992px) {
   #burgernav {
