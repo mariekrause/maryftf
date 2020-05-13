@@ -4,8 +4,8 @@
             <img id="logo_header" src="../assets/logo.png">
         </div>
         <div class="headerright">
-            <navbar></navbar>
-            <img id="marker" src="../assets/marker.svg">
+            <navbar id="nav"></navbar>
+            <img id="marker" d-none d-xl-inline src="../assets/marker.svg">
         </div>   
     </div>
 </template>
@@ -17,26 +17,30 @@
 </script>
 
 <style scoped>
+/* lg abwärts */
 @media (max-width: 1200px) {
     #marker {
         display: none;
     }
 }
-@media (max-width: 768px) {
+/* sm abwärts */
+@media (max-width: 767px) {
     #logo_header {
         overflow: none;
     }
     .headerleft {
-        width: 90% !important;
+        width: 70vw;
         display: flex;
     }
-/*     .headerright {
-        display: none !important;
-    } */
+}
+@media (min-width: 1200px) { 
+    #nav {
+        margin-right: 0%
+    }
 }
 
 #logo_header {
-    height: 10vh;
+    height: 5em;
     padding-left: 0.5vw;
 }
 a {
@@ -49,13 +53,11 @@ a {
     font-family: "Merriweather-Sans-Regular";
     }
 #marker {
-    width: 12%;
+    width: 10%;
     filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.2));
     position: absolute;
-    right: 1vw;
+    right: 2vw;
     top: -5vw;
-    display: none 
-    /*MARKER AUSBLENDEN */
 }
 .header {
     display: flex;
@@ -66,14 +68,13 @@ a {
 /*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  */    }
 .headerleft {
-    display: inline;
     overflow: none;
-    width: 70vw;
+    width: 45vw;
 }
 .headerright {
     display: flex;
-    width: 44vw;
-    justify-content: space-evenly;
+    width: 55vw;
+    justify-content: center;
     align-content: center;
     position: relative
 }

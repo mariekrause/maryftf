@@ -18,8 +18,6 @@
               </div>
           </b-row>
 
-          <img id="colouravatar" class="d-none d-sm-inline d-md-none" src="../assets/avatar_profile.png">
-
           <b-row class="post-its">
               <b-col xl="3" lg="3" md="4" sm="11" xs="11" class="post-it">
                 <a href="/about">
@@ -43,6 +41,8 @@
         </b-col>  
       </b-row>  
     </b-container>
+    <img id="colouravatar" class="d-none d-sm-inline d-md-none" src="../assets/avatar_profile.png">
+
     <custom-footer id="footer"></custom-footer>
   </div>
 </template>
@@ -65,16 +65,7 @@ export default {
 <style scoped>
 /* xl: */
 @media (min-width: 1200px) {
-  .post-its {
-    padding-left: 6%;
-  }
-  .aboutmeavatar {
-    max-height: 100%;
-    position: absolute;
-    bottom: 0
-  }
   .workavatar {
-    width: 60%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -86,6 +77,9 @@ export default {
     width: 33%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  #first_impression {
+    padding-right: 15%
+  }
 }
 /* lg and up */
 @media (min-width: 992px) {
@@ -94,32 +88,33 @@ export default {
   }
   .aboutmeavatar {
    max-height: 100%;
+   height: auto;
+   width: 100%;
    position: absolute;
    bottom: 0;
    right: 0
   }
   .workavatar {
-    max-height: 70%;
-    position: absolute;
-    right: 0;
-    bottom: 0
+   max-height: 100%;
+   height: auto;
+   width: 90%;
+   position: absolute;
+   bottom: 0;
+   right: 0
   }
   .rocket {
-    height: auto;
-    max-height: 100%;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 10%
+   max-height: 100%;
+   height: auto;
+   width: 65%;
+   position: absolute;
+   bottom: -5%;
+   right: -5%
   } 
-  .post-it {
-    height: 30vh !important;
-  }
   .post-its {
     padding-left: 0 !important;
   }
   #heading {
-    font-size: 5vw !important;
+    font-size: 3em !important;
     margin-left: 0 !important
   }
 
@@ -148,10 +143,21 @@ export default {
     display: none
   }
 }
+/* md and down */
+@media (max-width: 991px) {
+  .aboutmeavatar {
+    max-height: 100%;
+    position: absolute;
+    right: 0
+  }
+}
 /* sm and down */
 @media (max-width: 767px) {
   #hero_img {
     display: none
+  }
+  .post-its {
+    padding-left: 4% !important;
   }
   .post-it {
     height: 10vh !important;
@@ -159,6 +165,7 @@ export default {
   }
   .post-its {
     padding-left: 5%;
+    padding-top: 2%;
     padding-bottom: 5%
   }
   .postitheading {
@@ -169,7 +176,8 @@ export default {
     top: 20% !important;
   }
   #heading {
-    margin-top: 2vh !important
+    margin-top: 2vh !important;
+    font-size: 8vw !important
   }
 }
 
@@ -212,12 +220,15 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: .4s
   }
+  .post-its {
+    margin-left: -2vw
+  }
   #heading {
     margin-left: 5vw;
-    margin-top: 5vh;
+    margin-top: 4%;
     margin-bottom: 0;
     font-family: 'Bebasneue-Regular';
-    font-size: 8vw;
+    font-size: 3em;
     white-space: nowrap;
   }
   .subline1 {
@@ -239,29 +250,29 @@ export default {
   .postitheading {
     writing-mode: vertical-lr;
     font-family: "Bebasneue-Regular";
-    font-size: 40px;
+    font-size: 2.5em;
     color: white;
     position: absolute;
-    top: 3vh;
-    left: -5vh;
+    top: 8%;
+    left: -3vw;
   }
   .aboutmeavatar {
-    width: 80%;
     overflow: none;
     position: absolute;
     bottom: 0
   }
   #colouravatar {
-    width: 42vh;
+    width: 45%;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     right: 0;
-    z-index: 100
+    z-index: 49
   }
   #footer {
     position: fixed;
     bottom: 0;
-    width: 100%
+    width: 100%;
+    z-index: 50
   }
 </style>

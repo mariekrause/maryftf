@@ -42,7 +42,6 @@ export default {
     margin: 1vh 1vh 0;
   }
   .footertext {
-    margin: 1vh 0;
     display: flex;
     align-content: baseline;
     justify-content: center;
