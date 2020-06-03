@@ -32,8 +32,8 @@
                 </a>
               </b-col>
               <b-col xl="3" lg="3" md="3" sm="11" xs="11" class="post-it postit3">
-                <a href="/blog">
-                <p class="postitheading">Mein Blog</p>
+                <a href="/contact">
+                <p class="postitheading">Kontakt</p>
                 <img class="rocket d-none d-lg-inline" src="../assets/rocket.png">
                 </a>
               </b-col>  
